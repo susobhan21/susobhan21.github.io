@@ -6,29 +6,33 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 1100px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 1000px;
       margin: auto;
-      line-height: 1.7;
-      padding: 30px;
-      color: #222;
-      font-size: 18px;
+      padding: 40px 25px;
+      line-height: 1.75;
+      color: #1f1f1f;
+      background: #ffffff;
     }
 
     h1 {
-      font-size: 2.6em;
-      margin-bottom: 10px;
+      font-size: 2.7em;
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
     }
 
     h2 {
-      margin-top: 40px;
-      font-size: 1.6em;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+      font-size: 1.4em;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 6px;
     }
 
     a {
-      color: #003366;
+      color: #0b57d0;
       text-decoration: none;
     }
 
@@ -36,28 +40,51 @@
       text-decoration: underline;
     }
 
-    .container {
+    .top {
       display: flex;
+      gap: 40px;
       align-items: flex-start;
-      gap: 30px;
       margin-top: 20px;
     }
 
     img {
-      width: 260px;
-      max-width: 100%;
+      width: 240px;
       border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .meta {
+      font-size: 1.05em;
+      color: #333;
+    }
+
+    .links {
+      margin-top: 12px;
     }
 
     .links a {
-      margin-right: 10px;
+      margin-right: 14px;
+      font-weight: 500;
     }
 
-    @media (max-width: 600px) {
-      .container {
+    p {
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-top: 10px;
+      max-width: 800px;
+    }
+
+    @media (max-width: 700px) {
+      .top {
         flex-direction: column;
         align-items: center;
         text-align: center;
+      }
+
+      img {
+        width: 200px;
       }
     }
   </style>
@@ -65,18 +92,18 @@
 
 <body>
 
-<div class="container">
+<div class="top">
 
   <img src="photo.jpg" alt="Susobhan Chattopadhyay">
 
   <div>
     <h1>Susobhan Chattopadhyay</h1>
 
-    <p>
+    <div class="meta">
       PhD Student, Theoretical Particle Physics<br>
       Tata Institute of Fundamental Research, Mumbai<br>
-      Incoming Postdoctoral Researcher (University of Utah, USA, 2026)
-    </p>
+      Incoming Postdoctoral Researcher, University of Utah (2026)
+    </div>
 
     <div class="links">
       <a href="https://inspirehep.net/authors/2663516?ui-citation-summary=true" target="_blank">Publications</a>
@@ -88,24 +115,28 @@
 </div>
 
 <h2>About</h2>
-<p>
-I am a PhD student at the Tata Institute of Fundamental Research, Mumbai. My research lies in theoretical particle physics, with a focus on physics beyond the Standard Model.
-</p>
+<div class="section">
+  I am a PhD student at the Tata Institute of Fundamental Research, Mumbai. 
+  My research lies in theoretical particle physics, focusing on physics beyond the Standard Model.
+</div>
 
 <h2>Research Interests</h2>
-<p>
-Effective field theories (SMEFT, HEFT), flavor physics, and collider phenomenology. I am interested in connecting high-energy theory with precision measurements at current and future colliders.
-</p>
+<div class="section">
+  Effective field theories (SMEFT, HEFT), flavor physics, collider phenomenology, and precision tests of the Standard Model.
+</div>
 
 <h2>Publications</h2>
-<p>
-See my full publication list on <a href="https://inspirehep.net/authors/2663516?ui-citation-summary=true" target="_blank">INSPIRE-HEP</a>.
-</p>
+<div class="section">
+  Full list available on 
+  <a href="https://inspirehep.net/authors/2663516?ui-citation-summary=true" target="_blank">
+    INSPIRE-HEP
+  </a>.
+</div>
 
 <h2>CV</h2>
-<p>
-Download my full CV <a href="Resume.pdf" target="_blank">here</a>.
-</p>
+<div class="section">
+  Download my CV <a href="Resume.pdf" target="_blank">here</a>.
+</div>
 
 </body>
 </html>
